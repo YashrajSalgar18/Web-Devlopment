@@ -1,0 +1,48 @@
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background-color: #f3f7eaf5;
+    margin: 0;
+    padding: 20px;
+}
+
+.product-container {
+    display: flex;
+    width: 800px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.product-image img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.product-details {
+    margin-left: 30px;
+}
+
+.product-details h1 {
+    margin-top: 0;
+}
+
+.price {
+    color: green;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: darkblue;
+}
