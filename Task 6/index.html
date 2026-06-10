@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Feedback System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="left-sticker">
+  <img src="sticker.png.png" alt="Feedback Sticker">
+</div>
+
+<div class="container">
+
+    <h1>Student Course Feedback Form</h1>
+
+    <label>Student Name</label>
+    <input type="text" id="name" placeholder="Enter Your Name">
+
+    <h3>1. How well did you understand the course?</h3>
+
+    <label>
+        <input type="radio" name="understanding" value="Excellent">
+        Excellent
+    </label>
+
+    <label>
+        <input type="radio" name="understanding" value="Good">
+        Good
+    </label>
+
+    <label>
+        <input type="radio" name="understanding" value="Average">
+        Average
+    </label>
+
+    <label>
+        <input type="radio" name="understanding" value="Poor">
+        Poor
+    </label>
+
+    <h3>2. Was the course content helpful?</h3>
+
+    <label>
+        <input type="radio" name="helpful" value="Yes">
+        Yes
+    </label>
+
+    <label>
+        <input type="radio" name="helpful" value="No">
+        No
+    </label>
+
+    <h3>3. How do you rate the teaching Performance?</h3>
+
+    <label>
+        <input type="radio" name="teaching" value="Excellent">
+        Excellent
+    </label>
+
+    <label>
+        <input type="radio" name="teaching" value="Good">
+        Good
+    </label>
+
+    <label>
+        <input type="radio" name="teaching" value="Average">
+        Average
+    </label>
+
+    <label>
+        <input type="radio" name="teaching" value="Poor">
+        Poor
+    </label>
+
+    <h3>4. How would yoou rate the quality and relevance of the course material?</h3>
+
+     <label>
+        <input type="radio" name="material" value="Excellent">
+        Excellent
+    </label>
+
+    <label>
+        <input type="radio" name="material" value="Good">
+        Good
+    </label>
+
+    <label>
+        <input type="radio" name="material" value="Average">
+        Average
+    </label>
+
+    <label>
+        <input type="radio" name="material" value="Poor">
+        Poor
+    </label>
+
+    <h3>5. Do you find group activities and collaborative projects helpful?</h3>
+
+    <label>
+        <input type="radio" name="groupActivity" value="Yes">
+        Yes
+    </label>
+
+    <label>
+        <input type="radio" name="groupActivity" value="No">
+        No
+    </label>
+
+    <br><br>
+
+    <label>Additional Feedback</label>
+
+    <textarea id="feedback" rows="4"
+        placeholder="Enter Your Feedback"></textarea>
+
+    <button onclick="submitFeedback()">
+        Submit Feedback
+    </button>
+
+    <button onclick="viewFeedback()">
+        View Feedback
+    </button>
+
+    <p id="noFeedback">
+        No feedback submitted yet!
+    </p>
+
+    <div id="feedbackList"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
